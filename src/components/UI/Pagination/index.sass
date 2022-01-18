@@ -1,0 +1,27 @@
+.pagination
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    z-index: 999
+
+    .control
+        margin: 4px 20px
+        width: 30px
+        height: 30px
+        background: linear-gradient(317.7deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 105.18%), #EBECF0
+        background-blend-mode: soft-light, normal
+        border: 1px solid rgba(255, 255, 255, 0.4)
+        box-shadow: inset -3px -3px 5px #FAFBFF, inset 3px 3px 5px #A6ABBD
+        border-radius: 50%
+        transition: All .4s ease
+        cursor: pointer
+        
+        &:hover
+           opacity: .4
+
+        &.active
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 100%), #EAAC0F
+            border: 1px solid #F3B923
+            box-shadow: -3px -3px 10px #FAFBFF, 3px 3px 10px #A6ABBD

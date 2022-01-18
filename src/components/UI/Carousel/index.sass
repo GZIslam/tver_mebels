@@ -1,0 +1,75 @@
+.carousel
+    display: flex
+    height: 100%
+    width: 100%
+    justify-content: space-between
+    align-items: center
+
+    .left-side, .right-side
+        height: 100%
+        width: 45%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+        h1, p
+            white-space: nowrap
+            width: 100%
+            text-align: left
+
+        h1
+            font-style: normal
+            font-weight: bold
+            font-size: 3.2em
+            line-height: 80px
+            letter-spacing: 0.125em
+            color: #000000
+            text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1)
+            transition: opacity 500ms, transform 500ms
+
+        p
+            font-style: normal
+            font-weight: normal
+            font-size: 20px
+            line-height: 32px
+            letter-spacing: 0.16em
+            color: #919191
+            transition: opacity 700ms, transform 700ms
+
+        img
+            transition: opacity 500ms, transform 500ms
+
+    .right-side
+        .fade-enter
+            opacity: 0
+            transform: translateX(100%)
+
+        .fade-enter-active
+            opacity: 1
+            transform: translateX(0%)
+
+        .fade-exit
+            opacity: 1
+            transform: translateX(0%)
+
+        .fade-exit-active
+            opacity: 0
+            transform: translateX(-100%)
+
+    .left-side
+        .fade-enter
+            opacity: 0
+            transform: translateX(-100%)
+
+        .fade-enter-active
+            opacity: 1
+            transform: translateX(0%)
+
+        .fade-exit
+            opacity: 1
+            transform: translateX(0%)
+
+        .fade-exit-active
+            opacity: 0
+            transform: translateX(100%)
