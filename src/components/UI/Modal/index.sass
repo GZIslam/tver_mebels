@@ -1,0 +1,30 @@
+.modal
+    position: absolute
+    left: 0
+    top: 0
+    z-index: 9999
+    width: 100vw
+    height: 100vh
+    display: none
+    justify-content: center
+    align-items: center
+    background: linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%), #EBEBEB
+    background-blend-mode: soft-light, normal
+    border: 1px solid rgba(255, 255, 255, 0.4)
+    box-sizing: border-box
+    box-shadow: -3px -3px 10px rgb(250 251 255 / 70%), 3px 3px 10px rgb(166 171 189 / 70%)
+    border-radius: 14px
+    padding: 30px
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+    .close
+        position: absolute
+        top: 50px
+        right: 50px
+        background: none
+        border: none
+
+    &.active
+        display: flex

@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import "./index.sass";
+import React, { useState } from "react";
 import { Carousel } from "../../components/UI/Carousel";
 import Img1 from "../../assets/images/1.png";
 import Img2 from "../../assets/images/2.png";
@@ -26,7 +27,7 @@ export const Home = props => {
     const [ current, setCurrent ] = useState(0);
 
     return (
-        <div className="view">
+        <div className="view home">
             <Carousel items={carouselData} current={current} setCurrent={setCurrent}></Carousel>
         </div>
     );
